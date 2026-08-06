@@ -44,3 +44,7 @@ npx shadcn-vue@latest add <component-name>
     ├── components/       # 业务组件
     └── components/ui/    # shadcn-vue UI 组件
 ```
+
+## 说明
+
+> 本项目为迭代演示用前端工程，功能迭代由「前端开发专家」维护并合并。欢迎提出改进建议。
