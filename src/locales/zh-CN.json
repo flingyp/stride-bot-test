@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "stride-bot-test",
+    "langLabel": "中文"
+  },
+  "hero": {
+    "title": "Vue 3 项目已就绪 🎉",
+    "subtitle": "stride-bot-test 已初始化为 Vue 3 前端项目"
+  },
+  "features": {
+    "title": "项目特性",
+    "items": ["Vite 7 构建", "TypeScript 类型安全", "TailwindCSS v4 样式", "shadcn-vue 组件"]
+  },
+  "card": {
+    "title": "shadcn-vue 组件",
+    "description": "输入技能后点击添加，试试 Card / Input / Button / Badge",
+    "placeholder": "添加一个技能...",
+    "add": "添加",
+    "clear": "清空"
+  },
+  "counter": {
+    "title": "计数器示例",
+    "description": "使用 shadcn-vue Button 组件 + Tailwind 样式",
+    "decrementAria": "减一",
+    "incrementAria": "加一",
+    "even": "偶数",
+    "odd": "奇数"
+  },
+  "footer": {
+    "editHint1": "编辑",
+    "editHint2": "或",
+    "editHint3": "开始开发"
+  },
+  "theme": {
+    "toggleAria": "切换主题",
+    "toLight": "切换到浅色模式",
+    "toDark": "切换到深色模式"
+  },
+  "lang": {
+    "switchAria": "切换语言"
+  }
+}

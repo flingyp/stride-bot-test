@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "stride-bot-test",
+    "langLabel": "EN"
+  },
+  "hero": {
+    "title": "Vue 3 project is ready 🎉",
+    "subtitle": "stride-bot-test has been initialized as a Vue 3 frontend project"
+  },
+  "features": {
+    "title": "Project Features",
+    "items": ["Vite 7 build", "TypeScript type safety", "TailwindCSS v4 styling", "shadcn-vue components"]
+  },
+  "card": {
+    "title": "shadcn-vue Components",
+    "description": "Type a skill and click Add. Try Card / Input / Button / Badge",
+    "placeholder": "Add a skill...",
+    "add": "Add",
+    "clear": "Clear"
+  },
+  "counter": {
+    "title": "Counter Example",
+    "description": "Built with shadcn-vue Button components and Tailwind styling",
+    "decrementAria": "Decrement",
+    "incrementAria": "Increment",
+    "even": "Even",
+    "odd": "Odd"
+  },
+  "footer": {
+    "editHint1": "Edit",
+    "editHint2": "or",
+    "editHint3": "to start developing"
+  },
+  "theme": {
+    "toggleAria": "Toggle theme",
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  },
+  "lang": {
+    "switchAria": "Switch language"
+  }
+}
