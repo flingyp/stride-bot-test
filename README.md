@@ -44,7 +44,3 @@ npx shadcn-vue@latest add <component-name>
     ├── components/       # 业务组件
     └── components/ui/    # shadcn-vue UI 组件
 ```
-
-## 说明
-
-项目根目录下的 `*.md` / `*.txt` 文件为历史测试产物，与前端代码无关，可自行删除。
