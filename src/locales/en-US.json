@@ -1,7 +1,8 @@
 {
   "app": {
     "name": "stride-bot-test",
-    "langLabel": "EN"
+    "langLabel": "EN",
+    "githubAria": "View source on GitHub"
   },
   "hero": {
     "title": "Vue 3 project is ready 🎉",

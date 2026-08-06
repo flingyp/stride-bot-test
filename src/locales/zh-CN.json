@@ -1,7 +1,8 @@
 {
   "app": {
     "name": "stride-bot-test",
-    "langLabel": "中文"
+    "langLabel": "中文",
+    "githubAria": "在 GitHub 查看源码"
   },
   "hero": {
     "title": "Vue 3 项目已就绪 🎉",
