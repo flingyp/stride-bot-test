@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import AppHeader from './components/AppHeader.vue'
 import Counter from './components/Counter.vue'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -29,8 +30,9 @@ function addSkill() {
 </script>
 
 <template>
-  <div class="bg-muted/40 min-h-screen px-6 py-12 font-sans">
-    <main class="mx-auto max-w-2xl space-y-6">
+  <div class="bg-muted/40 min-h-screen font-sans">
+    <AppHeader />
+    <main class="mx-auto max-w-2xl space-y-6 px-6 py-12">
       <div class="text-center">
         <h1 class="text-3xl font-semibold tracking-tight">{{ title }}</h1>
         <p class="text-muted-foreground mt-2">stride-bot-test 已初始化为 Vue 3 前端项目</p>
