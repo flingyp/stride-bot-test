@@ -7,9 +7,9 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
   Card,
+  CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -46,6 +46,11 @@ function addSkill() {
         <CardHeader>
           <CardTitle>{{ t('card.title') }}</CardTitle>
           <CardDescription>{{ t('card.description') }}</CardDescription>
+          <CardAction>
+            <Button variant="outline" :disabled="skills.length === 0" @click="skills = []">
+              {{ t('card.clear') }}
+            </Button>
+          </CardAction>
         </CardHeader>
         <CardContent class="space-y-4">
           <div class="flex gap-2">
@@ -56,9 +61,6 @@ function addSkill() {
             <Badge v-for="item in skills" :key="item" variant="secondary">{{ item }}</Badge>
           </div>
         </CardContent>
-        <CardFooter class="justify-end">
-          <Button variant="outline" @click="skills = []">{{ t('card.clear') }}</Button>
-        </CardFooter>
       </Card>
 
       <Counter />
