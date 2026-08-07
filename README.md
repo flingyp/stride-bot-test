@@ -64,3 +64,4 @@ npx shadcn-vue@latest add <component-name>
 
 智能体tag验证
 taskId复用验证
+taskId指引验证
