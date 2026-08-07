@@ -82,3 +82,5 @@ npx shadcn-vue@latest add <component-name>
 CLI 契约验证 v2
 
 CLI 权限放行验证
+
+Agent 分支命名验证
