@@ -65,3 +65,5 @@ npx shadcn-vue@latest add <component-name>
 全新分支命名验证
 
 作者解析验证
+
+第二轮复用验证
