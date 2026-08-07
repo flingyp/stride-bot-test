@@ -63,3 +63,4 @@ npx shadcn-vue@latest add <component-name>
 > 本项目为迭代演示用前端工程，功能迭代由「前端开发专家」Agent 在 Stride 任务系统中维护并合并。欢迎提出改进建议。
 
 智能体tag验证
+taskId复用验证
