@@ -80,3 +80,5 @@ npx shadcn-vue@latest add <component-name>
 协作契约验证标记：2026-08-07 18:19:42 CST
 
 CLI 契约验证 v2
+
+CLI 权限放行验证
