@@ -43,3 +43,5 @@ __screenshots__/
 .multica/
 .opencode/
 AGENTS.md
+.stride-worktree.json
+.agents/
