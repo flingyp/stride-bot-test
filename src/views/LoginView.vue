@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+import { useAuthStore } from '@/stores/auth'
 
 //
 // Stride 风格登录界面（演示项目，未接入后端）。
-// 提交仅做本地校验与模拟登录，反馈文案对用户诚实说明。
+// 提交仅做本地校验与模拟登录，成功后进入后台管理框架。
 //
+
+const router = useRouter()
+const auth = useAuthStore()
 
 const form = reactive<{ email: string; password: string; remember: boolean }>({
   email: '',
@@ -15,7 +21,6 @@ const form = reactive<{ email: string; password: string; remember: boolean }>({
 const showPassword = ref(false)
 const submitting = ref(false)
 const error = ref('')
-const success = ref(false)
 
 const emailError = computed(() => {
   if (!form.email) return '请输入邮箱'
@@ -27,7 +32,6 @@ const passwordValid = computed(() => form.password.length > 0)
 
 function handleSubmit(): void {
   error.value = ''
-  success.value = false
 
   if (emailError.value) {
     // 聚焦行为交给输入框，这里仅提示
@@ -41,8 +45,8 @@ function handleSubmit(): void {
   submitting.value = true
   window.setTimeout(() => {
     submitting.value = false
-    success.value = true
-    error.value = ''
+    auth.login()
+    router.push({ name: 'dashboard' })
   }, 900)
 }
 </script>
@@ -97,7 +101,7 @@ function handleSubmit(): void {
             autocomplete="email"
             placeholder="name@company.com"
             spellcheck="false"
-            @input="error = ''; success = false"
+            @input="error = ''"
           />
         </label>
 
@@ -111,7 +115,7 @@ function handleSubmit(): void {
               name="password"
               autocomplete="current-password"
               placeholder="请输入密码"
-              @input="error = ''; success = false"
+              @input="error = ''"
             />
             <button
               type="button"
@@ -127,7 +131,6 @@ function handleSubmit(): void {
 
         <p v-if="emailError" class="form__error">{{ emailError }}</p>
         <p v-else-if="error" class="form__error">{{ error }}</p>
-        <p v-else-if="success" class="form__success">✓ 模拟登录成功（演示环境，未接入后端）</p>
 
         <div class="form__row">
           <label class="checkbox">
@@ -298,12 +301,6 @@ function handleSubmit(): void {
   font-size: 12.5px;
   color: var(--lp-danger);
 }
-.form__success {
-  margin: 0;
-  font-size: 12.5px;
-  color: #7cd87c;
-}
-
 .form__row {
   display: flex;
   align-items: center;
