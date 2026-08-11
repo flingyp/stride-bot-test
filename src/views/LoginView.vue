@@ -2,7 +2,7 @@
 import { computed, reactive, ref } from 'vue'
 
 //
-// Linear 风格登录界面（演示项目，未接入后端）。
+// Stride 风格登录界面（演示项目，未接入后端）。
 // 提交仅做本地校验与模拟登录，反馈文案对用户诚实说明。
 //
 
@@ -59,12 +59,12 @@ function handleSubmit(): void {
         <div class="brand__logo" aria-hidden="true">
           <svg viewBox="0 0 32 32" width="40" height="40">
             <defs>
-              <linearGradient id="linearBrand" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#7c8bff" />
-                <stop offset="1" stop-color="#5e6ad2" />
+              <linearGradient id="strideBrand" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#45e0a0" />
+                <stop offset="1" stop-color="#2fce89" />
               </linearGradient>
             </defs>
-            <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="url(#linearBrand)" />
+            <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="url(#strideBrand)" />
             <path
               d="M10.5 9.5v11"
               stroke="#0e0e10"
@@ -81,8 +81,8 @@ function handleSubmit(): void {
             />
           </svg>
         </div>
-        <h1 class="brand__name">Linear</h1>
-        <p class="brand__tagline">登录以继续使用 Linear</p>
+        <h1 class="brand__name">Stride</h1>
+        <p class="brand__tagline">登录以继续使用 Stride</p>
       </div>
 
       <!-- 表单区 -->
@@ -181,12 +181,12 @@ function handleSubmit(): void {
 .glow--top {
   top: -220px;
   right: -120px;
-  background: radial-gradient(circle, rgba(94, 106, 210, 0.16), transparent 70%);
+  background: radial-gradient(circle, rgba(47, 206, 137, 0.16), transparent 70%);
 }
 .glow--bottom {
   bottom: -240px;
   left: -140px;
-  background: radial-gradient(circle, rgba(124, 139, 255, 0.1), transparent 70%);
+  background: radial-gradient(circle, rgba(69, 224, 160, 0.1), transparent 70%);
 }
 
 /* 卡片 */

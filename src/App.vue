@@ -11,7 +11,7 @@
 
 <style>
 :root {
-  /* Linear 风格深色基调 */
+  /* Stride 风格深色基调 */
   --lp-bg: #0e0e10;
   --lp-card: #161618;
   --lp-border: #26262b;
@@ -19,9 +19,9 @@
   --lp-text: #e6e6e6;
   --lp-text-secondary: #9c9ca6;
   --lp-text-dim: #6f6f78;
-  --lp-accent: #5e6ad2;
-  --lp-accent-hover: #4f5ab8;
-  --lp-accent-soft: #2a2d56;
+  --lp-accent: #2fce89;
+  --lp-accent-hover: #27b076;
+  --lp-accent-soft: #123a2b;
   --lp-danger: #f2555a;
   --lp-radius: 6px;
 

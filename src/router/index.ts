@@ -23,7 +23,7 @@ const router = createRouter({
 
 router.afterEach((to) => {
   const title = to.meta.title as string | undefined
-  document.title = title ? `线性 · ${title}` : '线性'
+  document.title = title ? `Stride · ${title}` : 'Stride'
 })
 
 export default router
