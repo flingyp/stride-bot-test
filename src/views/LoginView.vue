@@ -6,7 +6,7 @@ import { useAuthStore } from '@/stores/auth'
 
 //
 // Stride 风格登录界面（演示项目，未接入后端）。
-// 提交仅做本地校验与模拟登录，成功后进入后台管理框架。
+// 提交时校验固定账号/密码，匹配后才进入后台管理框架。
 //
 
 const router = useRouter()
@@ -45,7 +45,11 @@ function handleSubmit(): void {
   submitting.value = true
   window.setTimeout(() => {
     submitting.value = false
-    auth.login()
+    const ok = auth.login(form.email, form.password)
+    if (!ok) {
+      error.value = '账号或密码不正确'
+      return
+    }
     router.push({ name: 'dashboard' })
   }, 900)
 }
